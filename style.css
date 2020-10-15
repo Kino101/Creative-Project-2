@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #9AECDB;
+}
+
+button {
+  font: inherit;
+}
+
+.historyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 700px;
+  height: 100px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#history {
+  display: block;
+  width: 80%;
+  height: inherit;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  background-color: white;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+}
+
+#clearHistory {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #FEA47F;
+}
+
+.calculatorBody {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  padding: 10px;
+  background-color: #2C3A47;
+  border-radius: 10px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+}
+
+.calculatorTop {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+
+#equationDisplay {
+  display: block;
+  width: 70%;
+  min-height: 20px;
+  max-height: 50px;
+  padding: 5px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  background-color: white;
+
+}
+
+.editEquation {
+  width: 13%;
+  min-width: 50px;
+  padding: 3px;
+  margin-left: 5px;
+  background-color: #FEA47F;
+  border-radius: 10px;
+}
+
+.calculatorMain {
+  display: flex;
+  padding-top: 10px;
+}
+
+.numberPad {
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto auto;
+}
+
+.number {
+  margin-bottom: 5px;
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #F8EFBA;
+}
+
+.operator {
+  background-color: #FD7272;
+  font-size: 25px;
+}
+
+#enter {
+  grid-column: 3 / 5;
+  width: 95%;
+  height: 35px;
+  background-color: #82589F;
+  border-radius: 10px;
+}
+
+.advancedOperations {
+  display: grid;
+  width: 50%;
+  grid-template-columns: auto auto auto;
+  margin-bottom: auto;
+}
+
+.advOp-item {
+  margin-bottom: 5px;
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #EAB543;
+
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: #0d0d0d;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.footer .footer-bottom {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  color: #FFFFFE;
+  bottom: 0px;
+  left: 0px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #FFFFFE;
+}
+
+.footer-bottom a:hover {
+  color: #F2387C;
+}
+/* //Footer */

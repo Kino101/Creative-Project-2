@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Creative Project 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+
+  <!--History scroll box-->
+  <h2>Calculator History</h2>
+  <div class="historyContainer">
+    <div id="history"></div>
+    <button id="clearHistory">Clear<br/>History</button>
+  </div>
+
+
+  <!--Calculator interface-->
+  <div class="calculatorBody">
+    <div class="calculatorTop">
+      <div id="equationDisplay"></div>
+      <button id="deleteButton" class="editEquation">Delete</button>
+      <button id="clearButton" class="editEquation">Clear</button>
+    </div>
+    <div class="calculatorMain">
+      <div class="numberPad">
+        <button id="7" class="number">7</button>
+        <button id="8" class="number">8</button>
+        <button id="9" class="number">9</button>
+        <button id="division" class="operator number">&#247;</button>
+        <button id="4" class="number">4</button>
+        <button id="5" class="number">5</button>
+        <button id="6" class="number">6</button>
+        <button id="multiply" class="operator number">&#215;</button>
+        <button id="1" class="number">1</button>
+        <button id="2" class="number">2</button>
+        <button id="3" class="number">3</button>
+        <button id="subtraction" class="operator number">-</button>
+        <button id="0" class="number">0</button>
+        <button id="." class="number">.</button>
+        <button id="(-)" class="number">(-)</button>
+        <button id="addition" class="operator number">+</button>
+        <button id="leftParn" class="number">(</button>
+        <button id="rightParn" class="number">)</button>
+        <button id="enter">Enter</button>
+      </div>
+      <div class="advancedOperations">
+        <button id="sin" class="advOp-item">sin</button>
+        <button id="cos" class="advOp-item">cos</button>
+        <button id="tan" class="advOp-item">tan</button>
+        <button id="power" class="advOp-item">pow</button>
+        <button id="STO" class="advOp-item">STO->Var</button>
+        <button id="Var" class="advOp-item">Var</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-bottom"><a href="https://github.com/Kino101/Creative-Project-2">GitHub</a></div>
+  </div>
+
+  <script text="type/javascript" src="/script.js"></script>
+</body>
+
+</html>
