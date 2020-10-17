@@ -15,10 +15,27 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #9AECDB;
+  font-family: 'Share Tech', sans-serif;
 }
 
 button {
   font: inherit;
+}
+
+.titleBanner  {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #2C3A47;
+  color: white;
+}
+
+h2 {
+  padding: 5px;
+  border-width: 2px;
+  border-style: solid;
+  margin-top: 10px;
 }
 
 .historyContainer {
@@ -29,13 +46,14 @@ button {
   max-width: 700px;
   height: 100px;
   padding: 5px;
-  margin-top: 5px;
+  margin: 10px;
 }
 
 #history {
   display: block;
   width: 80%;
   height: inherit;
+  padding: 5px;
   overflow-wrap: break-word;
   overflow-y: scroll;
   background-color: white;
@@ -47,6 +65,8 @@ button {
   padding: 10px;
   border-radius: 10px;
   background-color: #FEA47F;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
 }
 
 .calculatorBody {
@@ -130,12 +150,40 @@ button {
 }
 
 .advOp-item {
+  display: block;
   margin-bottom: 5px;
   width: 90%;
+  min-width: auto;
+  height: auto;
   height: 35px;
   border-radius: 10px;
   background-color: #EAB543;
 
+}
+
+#mathQuote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-column: 1/4;
+  background-color: white;
+  height: 115px;
+  width: 96.5%;
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 4px;
+  border-style: outset;
+  border-color: gray;
+  font-style: italic;
+  max-height: auto;
+}
+
+@media only screen and (max-width: 450px) {
+  #mathQuote {
+    height: auto;
+    min-height: 115px;
+  }
 }
 
 /* Footer */
@@ -145,7 +193,7 @@ button {
   width: 100%;
   bottom: 0px;
   left: 0px;
-  background-color: #0d0d0d;
+  background-color: #2C3A47;
   align-items: center;
   justify-content: center;
   margin-top: auto;
@@ -166,6 +214,6 @@ button {
 }
 
 .footer-bottom a:hover {
-  color: #F2387C;
+  color: #FD7272;
 }
 /* //Footer */

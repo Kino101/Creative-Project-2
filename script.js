@@ -140,6 +140,11 @@ document.getElementById("STO").addEventListener("click", function(event) {
     })
     .then(function(json) {
       variable = json;
+      document.getElementById("history").innerHTML +=
+        document.getElementById("equationDisplay").innerHTML + " -> Var";
+      let breakLine = document.createElement("br");
+      document.getElementById("history").appendChild(breakLine);
+      document.getElementById("equationDisplay").innerHTML = "";
     })
 })
 
@@ -157,6 +162,9 @@ document.getElementById("enter").addEventListener("click", function(event) {
   const url = "http://api.mathjs.org/v4/?expr=" + urlExpression;
   fetch(url)
     .then(function(response) {
+      if (response.status != 200) {
+        return "Error invalid input";
+      }
       return response.json();
     })
     .then(function(json) {
@@ -164,5 +172,29 @@ document.getElementById("enter").addEventListener("click", function(event) {
       let breakLine = document.createElement("br");
       document.getElementById("history").appendChild(breakLine);
       document.getElementById("equationDisplay").innerHTML = json;
+
+      if(document.getElementById("equationDisplay").innerHTML != "Error invalid input") {
+        newQuote(JSON.stringify(json));
+      }
     })
 })
+
+function newQuote(number) {
+  let index = number.indexOf('.');  //numbersapi only accepts whole numbers
+  if(index != -1){
+    number = number.slice(0, index);
+  }
+  let url = "http://numbersapi.com/" + number + "?json";
+  fetch(url)
+    .then(function(response) {
+      if (response.status != 200) {
+        return {
+          text: "Error calling the Numbers API service: " + response.statusText
+        }
+      }
+      return response.json();
+    })
+    .then(function(json) {
+      document.getElementById("mathQuote").innerHTML = '"' + json.text + '"';
+    })
+}
