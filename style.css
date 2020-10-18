@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html, body{
+html{
   height: 100%;
 }
 
@@ -190,7 +190,7 @@ h2 {
 /* Footer */
 .footer {
   display: flex;
-  height: 50px;
+  height: 40px;
   width: 100%;
   bottom: 0px;
   left: 0px;
@@ -207,7 +207,6 @@ h2 {
   color: #FFFFFE;
   bottom: 0px;
   left: 0px;
-  padding: 10px;
 }
 
 .footer-bottom a {
